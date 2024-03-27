@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Banner = () => {
     return (
         <div className="flex justify-center items-center min-h-[80vh] max-w-screen-xl mx-auto gap-10 xl:flex-row flex-col p-5">
@@ -13,7 +15,7 @@ const Banner = () => {
                         <h2 className="text-2xl font-bold text-[#201658]">Android App</h2>
                         <p className="text-center text-lg font-semibold">Download TURFY from Play Store for your Android</p>
                         <div className="card-actions justify-center mt-2">
-                            <button className="btn btn-outline text-lg">Click Here</button>
+                            <Link to="https://play.google.com/store/apps/details?id=com.turf_finder_ctg.com"><button className="btn btn-outline text-lg">Click Here</button></Link>
                         </div>
                     </div>
                 </div>
@@ -23,7 +25,7 @@ const Banner = () => {
                         <h2 className="text-2xl font-bold text-[#201658]">IOS App</h2>
                         <p className="text-center text-lg font-semibold">Download TURFY from App Store for your IOS</p>
                         <div className="card-actions justify-center mt-2">
-                            <button className="btn btn-outline text-lg">Click Here</button>
+                        <Link to="/comingsoon"><button className="btn btn-outline text-lg">Click Here</button></Link>
                         </div>
                     </div>
                 </div>
